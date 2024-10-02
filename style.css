@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.container-fluid {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.col-md-3 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.col-md-3 img {
+    width: 80px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+@media only screen and (max-width: 420px) {
+    .search input {
+        height: 40px;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .search button {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .search button img {
+        width: 10px;
+    }
+
+    .weather-icon {
+        width: 140px;
+        margin-top: 15px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+        font-weight: 400px;
+    }
+
+    .weather h2 {
+        font-size: 18px;
+        font-weight: 350px;
+        margin-top: 10px;
+    }
+
+    .col-md-3 img {
+        width: 50px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+        margin-top: -6px;
+    }
+
+    #humidity {
+        margin-top: -16px;
+        width: 60px;
+    }
+
+    #wind {
+        margin-top: -16px;
+        width: 60px;
+        margin-left: 8px;
+
+    }
+    p{
+        position: relative;
+        bottom: 3px;
+        margin-left: -10px;
+
+    }
+    /* body{
+        overflow: hidden;
+    } */
+
+}
+
+@media only screen and (max-width: 317px) {
+    .search input {
+        height: 25px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .search button {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+
+    .search button img {
+        width: 8px;
+        margin-bottom: 2px;
+    }
+
+    .weather-icon {
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    .weather h1 {
+        font-size: 35px;
+        font-weight: 400px;
+    }
+
+    .weather h2 {
+        font-size: 15px;
+        font-weight: 350px;
+        margin-top: 10px;
+    }
+
+    .col-md-3 img {
+        width: 30px;
+    }
+
+    .humidity, .wind {
+        font-size: 15px;
+        margin-top: -6px;
+    }
+
+    #humidity {
+        margin-bottom: 7px;
+        width: 60px;
+    }
+
+    #wind {
+        margin-bottom: 7px;
+        width: 65px;
+        margin-left: 10px;
+
+    }
+   
+}
+
+@media only screen and (max-width: 230px) {
+    .search input {
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .search button {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    .search button img {
+        width: 5px;
+        margin-bottom: 6px;
+    }
+
+    .weather-icon {
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    .weather h1 {
+        font-size: 30px;
+        font-weight: 400px;
+    }
+
+    .weather h2 {
+        font-size: 10px;
+        font-weight: 350px;
+        margin-top: 10px;
+    }
+
+    .col-md-3 img {
+        width: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 15px;
+        margin-top: -6px;
+    }
+
+    #humidity {
+        margin-bottom: 7px;
+        width: 40px;
+    }
+
+    #wind {
+        margin-bottom: 7px;
+        margin-left: 7px;
+        width: 40px;
+
+    }
+    p{
+        font-size: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 203px) {
+    .search input {
+        height: 20px;
+        font-size: 5px;
+    }
+
+    .search button {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    .search button img {
+        width: 5px;
+        margin-bottom: 6px;
+    }
+
+    .weather-icon {
+        width: 100px;
+        margin-top: 8px;
+    }
+
+    .weather h1 {
+        font-size: 25px;
+        font-weight: 400px;
+    }
+
+    .weather h2 {
+        font-size: 8px;
+        font-weight: 350px;
+        margin-top: 10px;
+    }
+
+    .col-md-3 img {
+        width: 20px;
+    }
+
+    .humidity, .wind {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+
+    #humidity {
+        margin-top: 0.5px;
+        width: 40px;
+    }
+
+    #wind {
+        margin-top: 1px;
+        margin-left: 7px;
+        width: 40px;
+
+    }
+    p{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 170px) {
+    .search input {
+        height: 20px;
+        font-size: 5px;
+    }
+
+    .search button {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    .search button img {
+        width: 5px;
+        margin-bottom: 6px;
+    }
+
+    .weather-icon {
+        width: 80px;
+        margin-top: 8px;
+    }
+
+    .weather h1 {
+        font-size: 20px;
+        font-weight: 350px;
+    }
+
+    .weather h2 {
+        font-size: 5px;
+        font-weight: 300px;
+        margin-top: 10px;
+    }
+
+    .col-md-3 img {
+        width: 15px;
+    }
+
+    .humidity, .wind {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+
+    #humidity {
+        margin-top: 0.5px;
+        width: 35px;
+    }
+
+    #wind {
+        margin-top: 1px;
+        margin-left: 7px;
+        width: 30px;
+
+    }
+    p{
+        font-size: 5px;
+    }
+   
+}
+
