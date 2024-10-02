@@ -20,15 +20,15 @@ async function checkweather(city) {
     console.log("sky", sky_color)
 
     if (sky_color == 'Clouds') {
-        weatherIcon.setAttribute('src', "../Images/clouds.png")
+        weatherIcon.setAttribute('src', "clouds.png")
     } else if (sky_color == 'Clear') {
-        weatherIcon.setAttribute('src', "../Images/clear.png")
+        weatherIcon.setAttribute('src', "clear.png")
     } else if (sky_color == 'Rain') {
-        weatherIcon.setAttribute('src', "../Images/rain.png")
+        weatherIcon.setAttribute('src', "rain.png")
     } else if (sky_color == 'Drizzle') {
-        weatherIcon.setAttribute('src', "../Images/drizzle.png")
+        weatherIcon.setAttribute('src', "drizzle.png")
     } else if (sky_color == 'Mist') {
-        weatherIcon.setAttribute('src', "../Images/mist.png")
+        weatherIcon.setAttribute('src', "mist.png")
     }
 
 }
